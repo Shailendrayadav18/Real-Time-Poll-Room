@@ -33,6 +33,7 @@ function CreatePoll() {
 
       navigate(`/poll/${res.data.pollId}`);
     } catch (err) {
+      console.log(err);
       alert("Failed to create poll");
     }
   };
